@@ -1,7 +1,7 @@
 <?php
 
     include_once 'db.php';
-    include_once 'libs/fpdf184/fpdf.php';
+    include_once '../libs/fpdf184/fpdf.php';
 
     class PDF extends FPDF {
         function Header() {

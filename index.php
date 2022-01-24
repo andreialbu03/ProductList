@@ -1,13 +1,5 @@
-<!-- 
-TODO
-
-- create script folder and change structure
-- host on web
-
--->
-
 <?php
-    include_once 'db.php';
+    include_once 'scripts/db.php';
 ?>
 
 
@@ -15,7 +7,7 @@ TODO
 <html lang="en">
 <head>
     <title>Inventory</title>
-    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
 </head>
 
@@ -30,7 +22,6 @@ TODO
                 <th class="database-th">Description</th>
                 <th class="database-th">Choose Item</th>
             </tr>
-
 
             <?php
             $sql = "SELECT * FROM inventoryList";
@@ -66,7 +57,7 @@ TODO
     </div>
 
     
-    <form class="form1" action="commit.php" method="POST">
+    <form class="form1" action="scripts/commit.php" method="POST">
         <table class="display-selected">
         <tbody>
             <tr>
@@ -88,23 +79,25 @@ TODO
 
         <input type="hidden" id="operation" name="operation" value=""/>
 
-
         <div class="submitButton">
             <input type="submit" name="submit" onclick="return commitData()" value="Commit"/>
         </div>
     </form>
     
-    <form class="form2" action="generate_csv.php" method="POST">
+
+    <form class="form2" action="scripts/generate_csv.php" method="POST">
         <input type="submit" name="submit" value="Export to CSV"/>
     </form>
 
-    <form class="form2" action="generate_pdf.php" method="POST">
+
+    <form class="form2" action="scripts/generate_pdf.php" method="POST">
         <input type="submit" name="submit" value="Export to PDF"/>
     </form>
 
 
     <!-- JavaScript -->
-    <script src="index.js"></script>
+    <script src="scripts/index.js"></script>
+    
     
 </body>
 </html>

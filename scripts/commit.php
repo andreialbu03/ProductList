@@ -2,6 +2,7 @@
 
     include_once 'db.php';
 
+    // Capture input
     $operation = $_POST['operation'];
     $prod_id = $_POST['prod_id'];
     $quantity = $_POST['quantity'];
@@ -31,6 +32,6 @@
             break;
     }
     
-    header("Location: index.php?commit=success");
+    header("Location: ../index.php?commit=success");
 
 ?>
