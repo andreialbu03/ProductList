@@ -1,0 +1,146 @@
+.database {
+    border-collapse: collapse;
+    width: 100%;
+    color: #20b2aa;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+}
+
+
+.database-th {
+    background-color: #20b2aa;
+    color: white;
+}
+
+
+.table-db {
+    overflow:scroll;
+    max-height: 400px;
+    width:100%;
+    overflow:auto;
+}
+
+
+tr:nth-child(even) {
+    background-color: #ededed
+}
+
+
+.buttons {
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.data {
+    font-size:15px;
+}
+
+
+.labels {
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.display-selected {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.submitButton {
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.operation {
+    padding-bottom: 15px;
+	font: 95% Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+.form1 {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px auto;
+	padding: 16px;
+    padding-top: 1px;
+    padding-bottom: 25px;
+    background: #F7F7F7;
+}
+
+
+.form1 input[type="text"],
+.form1 input[type="date"],
+.form1 input[type="datetime"],
+.form1 input[type="email"],
+.form1 input[type="number"],
+.form1 input[type="search"],
+.form1 input[type="time"],
+.form1 input[type="url"],
+.form1 textarea,
+.form1 select
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+
+
+.form1 input[type="text"]:focus,
+.form1 input[type="date"]:focus,
+.form1 input[type="datetime"]:focus,
+.form1 input[type="email"]:focus,
+.form1 input[type="number"]:focus,
+.form1 input[type="search"]:focus,
+.form1 input[type="time"]:focus,
+.form1 input[type="url"]:focus,
+.form1 textarea:focus,
+.form1 select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+
+.form1 input[type="submit"],
+.form1 input[type="button"],
+.form2 input[type="submit"],
+.button {
+	background: #43D1AF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #30C29E;
+	border-radius: 3px;
+	color: #fff;
+}
+
+
+.form1 input[type="submit"]:hover,
+.form1 input[type="button"]:hover,
+.form2 input[type="submit"]:hover,
+.button:hover {
+	background: #2EBC99;
+	color:#fff;
+}
